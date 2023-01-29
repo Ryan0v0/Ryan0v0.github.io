@@ -21,3 +21,8 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+
+gem 'nokogiri'
+gem 'rack', '~> 2.2.4'
+gem 'rspec'
+
