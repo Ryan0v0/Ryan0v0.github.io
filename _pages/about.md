@@ -2,18 +2,18 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: M.Phil in Advanced Computer Science @ Cambridge | Do not go gentle into that good night 🧗
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: graduation.jpg
   image_cicular: false # crops the image to make it circular
   address: >
     <p>William Gates Building</p>
     <p>15 JJ Thomson Ave</p>
     <p>Cambridge CB3 0FD</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
