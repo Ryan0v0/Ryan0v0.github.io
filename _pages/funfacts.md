@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: about
 permalink: /misc/
-title: Fun facts about me
+title: fun facts about me
 description: My life when I'm not doing research...
 nav: true
-nav_order: 5
+nav_order: 2
 ---
 
 My Chinese name is 赵婉如 (趙婉如 in traditional Chinese). The pronunciation of my given name roughly sounds like "One Rule" in English, while it actually derives from a line in the Chinese Classic of Poetry (詩經): "有美一人，婉如清揚", which means "there is a beautiful woman, graceful and poised".
