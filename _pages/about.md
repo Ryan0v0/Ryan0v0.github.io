@@ -24,18 +24,4 @@ I'm an M.Phil student at the University of Cambridge. I'm studying Advanced Comp
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang).
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .highlight {
-            background-color: #F4CCFA;
-        }
-    </style>
-</head>
-<body>
-    <p class="highlight">I'm open to collaborating in all forms and would love to explore any opportunities!</p >
-</body>
-</html>
-
-Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com), [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/master/assets/img/wechat.jpg), or [Calendly](https://calendly.com/wanru-zhao).
+<span style="background-color: #F9EAFB">I'm open to collaborating in all forms and would love to explore any opportunities!</span> Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com), [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/master/assets/img/wechat.jpg), or [Calendly](https://calendly.com/wanru-zhao).
