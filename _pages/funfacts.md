@@ -1,6 +1,7 @@
 ---
-layout: about
-title: My life when I'm not doing research...
+layout: page
+permalink: /misc/
+title: Misc
 description: My life when I'm not doing research...
 nav: true
 nav_order: 5
