@@ -24,4 +24,4 @@ I'm an M.Phil student at the University of Cambridge. I'm studying Advanced Comp
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang).
 
-I'm always happy to have all forms of collaboration! Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com) or [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/1ac9b7c3b2c8c0d55b2a3516fc1d8f03489f889e/assets/img/wechat.jpg). 
+**I'm always happy to have all forms of collaboration!** Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com) or [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/1ac9b7c3b2c8c0d55b2a3516fc1d8f03489f889e/assets/img/wechat.jpg). 
