@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Do not go gentle into that good night 🧗
+# subtitle: Do not go gentle into that good night 🧗
 
 profile:
   align: right
@@ -20,8 +20,8 @@ social: true  # includes social icons at the bottom of the page
 
 Hey, thanks for stopping by! 👋
 
-I'm an M.Phil student at the University of Cambridge. I'm studying Advanced Computer Science at the Department of Computer Science and Technology. My research interests lie on Machine Learning Systems, Human-AI Interaction and Graph Neural Networks. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab (CaMLSys), supervised by Prof. [Nic Lane](http://niclane.org/). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
+I'm an M.Phil student in Advanced Computer Science at the Department of Computer Science and Technology at the University of Cambridge. My research interests lie on Machine Learning Systems, Human-AI Interaction and Graph Neural Networks. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang).
 
-<span style="background-color: #F9EAFB">I'm open to collaborating in all forms and would love to explore any opportunities!</span> Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com), [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/master/assets/img/wechat.jpg), or [Calendly](https://calendly.com/wanru-zhao).
+<span style="background-color: #F9EAFB">I'm open to collaborations in all forms and would love to explore any opportunities!</span> Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com), [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/master/assets/img/wechat.jpg), or [Calendly](https://calendly.com/wanru-zhao).
