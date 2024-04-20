@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /misc/
-title: fun facts about me
+title: Misc.
 description: My life when I'm not doing research...
 nav: true
 nav_order: 3
