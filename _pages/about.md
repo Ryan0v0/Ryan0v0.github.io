@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hey, thanks for stopping by! 👋
 
-I'm an M.Phil student in Advanced Computer Science at the Department of Computer Science and Technology at the University of Cambridge. My research interests lie on Machine Learning Systems, Human-AI Interaction and Graph Neural Networks. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
+I'm a postgrad student in Computer Science at the Department of Computer Science and Technology at the University of Cambridge. My research interests lie on Machine Learning Systems, Human-AI Interaction and Graph Neural Networks. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang), and [SenseTime](https://www.sensetime.com/en).
 
