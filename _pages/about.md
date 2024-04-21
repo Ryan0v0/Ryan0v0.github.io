@@ -20,10 +20,19 @@ social: true  # includes social icons at the bottom of the page
 
 Hey, thanks for stopping by! 👋
 
-I'm a postgrad student in Computer Science at the Department of Computer Science and Technology at the University of Cambridge. My research interests lie on Machine Learning Systems, Human-AI Interaction and Graph Neural Networks. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
+I'm a postgrad student in Computer Science at the Department of Computer Science and Technology at the University of Cambridge. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/), where I actively work on open-source frameworks[Flower](https://github.com/adap/flower). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
 
-My research target at involving into the era of Large Language Models, mulitlingual and data quality. I'm safety(FAccT2023), security(MLSys2023Workshop, ICLR2024workshop, UK Challenge) and efficiency: Protea and Pollen(MobiCom2022FedEdge, MobiUK2023). [Flower](https://github.com/adap/flower)![Github stars](https://img.shields.io/github/stars/dmlc/dgl)![Github stars](https://img.shields.io/github/stars/adap/flower). 
+My research target at the development of AI more decentralised by focusing on AI methods that are less centralised and more collaborative, with the focus. To involving into the era of Large Language Models mulitlingual(ICLR2024) and data quality(ICLR2024DPFM). 
 
-Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang), where I worked on [Deep Graph Library](https://www.dgl.ai/) ![Github stars](https://img.shields.io/github/stars/dmlc/dgl) and its interpretability toolkits [GNNLens2](https://github.com/dmlc/GNNLens2}![Github stars](https://img.shields.io/github/stars/dmlc/dgl)![Github stars](https://img.shields.io/github/stars/dmlc/GNNLens2). 
+collaborative solution for broader public, and working on the following key aspect to:
+
+🔐 privacy and security (MLSys2023SeT, ICLR2024workshop, UK Challenge)
+🛡 safety (FAccT2023) 
+🚀 efficiency: (Protea@MobiCom2022FedEdge, Pollen@MobiUK2023)
+
+how can we benefit from multiple? specialised low-resource? 
+how can we include high-quality private data source to solve the public data exhaustion in scaling up large language models? 
+
+Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang), where I worked on [Deep Graph Library](https://www.dgl.ai/) ![Github stars](https://img.shields.io/github/stars/dmlc/dgl) and its interpretability toolkits [GNNLens2](https://github.com/dmlc/GNNLens2}![Github stars](https://img.shields.io/github/stars/dmlc/GNNLens2). 
 
 <span style="background-color: #F9EAFB">I'm open to collaborations in all forms and would love to explore any opportunities!</span> Feel free to contact me by Email (wz341 [AT] cam.ac.uk or zhaowrenee [AT] gmail.com), [Wechat](https://github.com/Ryan0v0/Ryan0v0.github.io/blob/master/assets/img/wechat.jpg), or [Calendly](https://calendly.com/wanru-zhao).
