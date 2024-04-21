@@ -25,7 +25,9 @@ I'm a postgraduate student in Computer Science at the Department of Computer Sci
 My research targets the development of more decentralized AI by focusing on AI methods that are less centralized and more collaborative. The focus involves moving into the era of Large Language Models that are multilingual (ICLR 2024) and prioritize data quality (ICLR 2024 DPFM). I aim to develop collaborative solutions for foundation models that benefit the broader public, working on the following key aspects:
 
 🔐 Privacy and security (MLSys 2023 SeT, ICLR 2024 workshop, UK Challenge)
+
 🛡 Safety (FAccT 2023)
+
 🚀 Efficiency (Protea@MobiCom 2022 FedEdge, Pollen@MobiUK 2023)
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang), where I worked on [Deep Graph Library](https://www.dgl.ai/) ![Github stars](https://img.shields.io/github/stars/dmlc/dgl) and its interpretability toolkits [GNNLens2](https://github.com/dmlc/GNNLens2}![Github stars](https://img.shields.io/github/stars/dmlc/GNNLens2). 
