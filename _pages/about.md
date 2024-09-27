@@ -20,15 +20,9 @@ social: true  # includes social icons at the bottom of the page
 
 Hey, thanks for stopping by! 👋
 
-I'm a postgraduate student in Computer Science at the Department of Computer Science and Technology at the University of Cambridge. I'm currently working on Federated Learning at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)), supervised by Prof. [Nic Lane](http://niclane.org/), where I actively work on the open-source framework [Flower](https://github.com/adap/flower)![Github stars](https://img.shields.io/github/stars/adap/flower). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. 
+I'm a PhD student in Computer Science at the Department of Computer Science and Technology, University of Cambridge, supervised by Prof. [Nic Lane](http://niclane.org/) at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. I’m currently visiting the Vector Institute, working with Prof. [Colin Raffel](https://colinraffel.com/) at the University of Toronto.
 
-My research targets the development of more decentralized AI by focusing on AI methods that are less centralized and more collaborative. The focus involves moving into the era of Large Language Models that are multilingual (ICLR 2024) and prioritize data quality (ICLR 2024 DPFM). I aim to develop collaborative solutions for foundation models that benefit the broader public, working on the following key aspects:
-
-🔐 Privacy and security (MLSys 2023 SeT, ICLR 2024 workshop, UK Challenge)
-
-🛡 Safety (FAccT 2023)
-
-🚀 Efficiency (Protea@MobiCom 2022 FedEdge, Pollen@MobiUK 2023)
+My research targets the development of more decentralized AI by focusing on AI methods that are less centralized and more collaborative. 
 
 Prior to Cambridge, I was glad to be advised by Prof. [Yongxin Tong](https://yongxintong.github.io/) and Prof. [Xianglong Liu](https://xlliu-beihang.github.io/). I also spent wonderful time doing research at AWS AI Lab mentored by Dr. [Minjie Wang](https://jermainewang.github.io/) and Prof. [Zheng Zhang](https://research.shanghai.nyu.edu/centers-and-institutes/datascience/people/zheng-zhang), where I worked on [Deep Graph Library](https://www.dgl.ai/) ![Github stars](https://img.shields.io/github/stars/dmlc/dgl) and its interpretability toolkits [GNNLens2](https://github.com/dmlc/GNNLens2)![Github stars](https://img.shields.io/github/stars/dmlc/GNNLens2). 
 
