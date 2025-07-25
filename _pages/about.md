@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hey, thanks for stopping by! 👋
 
-I'm a PhD student in Computer Science at the Department of Computer Science and Technology, University of Cambridge, supervised by [Nic Lane](http://niclane.org/) at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. I’m currently visiting the Vector Institute, working with [Colin Raffel](https://colinraffel.com/) at the University of Toronto. I interned at Microsoft Research, mentored by [Alessandro Sordoni](https://mila.quebec/en/directory/alessandro-sordoni) and [Lucas Caccia](https://www.cs.mcgill.ca/~lpagec/).
+I'm a PhD student in Computer Science at the Department of Computer Science and Technology, University of Cambridge, supervised by [Nic Lane](http://niclane.org/) at the Cambridge Machine Learning Systems Lab ([CaMLSys](https://mlsys.cst.cam.ac.uk/)). I'm also a member of Cambridge AI Safety Lab, working on AI Alignment and Interpretability. I’m currently visiting the Vector Institute, working with [Colin Raffel](https://colinraffel.com/) at the University of Toronto. I was a research intern at Microsoft Research, mentored by [Alessandro Sordoni](https://mila.quebec/en/directory/alessandro-sordoni) and [Lucas Caccia](https://www.cs.mcgill.ca/~lpagec/).
 
 My research focuses on:
 
