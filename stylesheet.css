@@ -656,6 +656,8 @@ h3 {
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,650;6..12,750;6..12,850&display=swap");
+
 /* Plum editorial theme. */
 :root {
   --bg: #fffafd;
@@ -670,8 +672,10 @@ h3 {
 }
 
 body {
-  font-size: 15.8px;
-  line-height: 1.64;
+  font-family: "Nunito Sans", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.68;
+  letter-spacing: 0;
 }
 
 .site-header {
@@ -697,7 +701,7 @@ main,
 
 .profile-panel {
   grid-template-columns: 172px minmax(0, 1fr);
-  border-top: 5px solid #8a2f6b;
+  border-top: 0;
 }
 
 .profile-photo img {
@@ -708,6 +712,22 @@ main,
 
 h1 {
   color: #211925;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+h2,
+h3,
+.brand,
+.nav-links,
+.kicker,
+.eyebrow,
+.pub-links a {
+  font-family: "Nunito Sans", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+}
+
+h3 {
+  font-weight: 800;
 }
 
 .kicker,
@@ -762,4 +782,14 @@ h1 {
 
 .timeline time {
   color: #8a2f6b;
+}
+
+.compact-bio,
+.research-focus article p {
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.publication p {
+  line-height: 1.62;
 }
