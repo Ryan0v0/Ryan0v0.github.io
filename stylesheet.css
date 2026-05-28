@@ -424,6 +424,11 @@ h3 {
   margin-bottom: 7px;
 }
 
+.venue-highlight {
+  color: #8a2f6b;
+  font-weight: 850;
+}
+
 .pub-links {
   margin-top: 10px;
 }
