@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
 :root {
   --bg: #f7f8f5;
   --panel: #ffffff;
@@ -660,7 +662,7 @@ h3 {
   main,
   .nav,
   .footer {
-    width: min(100% - 24px, 1080px);
+    width: min(1080px, calc(100% - 24px));
   }
 
   h1 {
@@ -678,8 +680,6 @@ h3 {
     padding: 18px;
   }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 /* Plum editorial theme. */
 :root {
@@ -815,4 +815,238 @@ h3 {
 
 .publication p {
   line-height: 1.62;
+}
+
+@media (max-width: 820px) {
+  .nav {
+    width: min(1120px, calc(100% - 28px));
+    min-height: auto;
+    padding: 13px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .brand {
+    font-size: 0.98rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding-bottom: 0;
+    white-space: normal;
+  }
+
+  main,
+  .footer {
+    width: min(1120px, calc(100% - 28px));
+  }
+
+  .profile-panel,
+  .news-panel,
+  .publication,
+  .featured-publication,
+  .internship-card,
+  .research-focus article {
+    max-width: 100%;
+  }
+
+  .profile-copy,
+  .compact-bio,
+  .research-focus,
+  .research-focus article,
+  .job-market-highlight,
+  .publication-copy,
+  .clean-list,
+  .timeline span,
+  .compact-timeline span {
+    min-width: 0;
+  }
+
+  .compact-bio a,
+  .research-focus a,
+  .publication a,
+  .clean-list a,
+  .timeline a,
+  .compact-timeline a {
+    overflow-wrap: anywhere;
+  }
+
+  .intro {
+    padding: 22px 0 28px;
+  }
+
+  .profile-panel {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .profile-photo img {
+    width: min(160px, 48vw);
+  }
+
+  h1 {
+    font-size: clamp(2.05rem, 11vw, 2.7rem);
+    line-height: 1.05;
+  }
+
+  .compact-bio,
+  .research-focus article p {
+    font-size: 0.98rem;
+    line-height: 1.62;
+  }
+
+  .research-focus {
+    margin-top: 16px;
+  }
+
+  .research-focus article {
+    padding: 11px 12px;
+  }
+
+  .job-market-highlight {
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .two-column,
+  .featured-publication {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-publication {
+    gap: 13px;
+    padding: 14px;
+  }
+
+  .publication-image img {
+    aspect-ratio: 2.15;
+  }
+
+  .publication h3 {
+    font-size: 1rem;
+    line-height: 1.28;
+  }
+
+  .internship-card {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 12px;
+    align-items: center;
+  }
+
+  .brand-mark {
+    width: 70px;
+    min-height: 54px;
+    overflow: hidden;
+  }
+
+  .brand-mark img,
+  .brand-mark .logo-kimi,
+  .brand-mark .logo-caish,
+  .brand-pair .logo-huggingface {
+    max-width: 100%;
+  }
+
+  .brand-pair {
+    grid-template-columns: 70px;
+  }
+
+  .brand-pair .brand-mark {
+    width: 70px;
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 15px;
+  }
+
+  main,
+  .nav,
+  .footer {
+    width: min(1120px, calc(100% - 22px));
+  }
+
+  .nav-links {
+    gap: 13px;
+    font-size: 0.9rem;
+  }
+
+  .profile-panel,
+  .news-panel,
+  .publication,
+  .internship-card {
+    border-radius: 8px;
+  }
+
+  .profile-panel {
+    padding: 15px;
+  }
+
+  .profile-photo img {
+    width: min(145px, 56vw);
+  }
+
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  .eyebrow,
+  .kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  .icon-links a {
+    width: 36px;
+    min-height: 36px;
+  }
+
+  .internship-card {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .brand-pair {
+    grid-template-columns: repeat(2, 64px);
+  }
+
+  .internship-topline {
+    align-items: flex-start;
+  }
+
+  .timeline li,
+  .compact-timeline li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding-bottom: 16px;
+  }
+
+  .publication {
+    padding: 16px;
+  }
+
+  .publication-copy {
+    padding: 0;
+  }
+
+  .publication-image img {
+    aspect-ratio: 2;
+  }
+
+  .pub-links {
+    gap: 8px;
+  }
+
+  .pub-links a {
+    min-height: 26px;
+  }
 }
