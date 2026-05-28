@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1704 764" role="img" aria-labelledby="title desc">
+  <title id="title">Dataset decomposition overview</title>
+  <desc id="desc">Overview of solving complex problems through dataset decomposition, splitting chain-of-thought steps into tagged subproblems and organizing tags in a graph.</desc>
+  <defs>
+    <style>
+      .box{fill:#f9fbfd;stroke:#09253d;stroke-width:4}
+      .cot{fill:#d9f2cf;stroke:#176b28;stroke-width:4}
+      .ans{fill:#fde2d4;stroke:#8a3d19;stroke-width:3}
+      .tag{fill:#9ad0fb;stroke:#09253d;stroke-width:3}
+      .depth1{fill:#f1f1f1;stroke:#e1e1e1;stroke-width:1.5}
+      .depth2{fill:#d8d8d8}
+      .green{fill:#b8e6a8;stroke:#176b28;stroke-width:4}
+      .greenDash{fill:#b8e6a8;stroke:#176b28;stroke-width:4;stroke-dasharray:14 9}
+      .cotDash{fill:#a8c7a0;stroke:#176b28;stroke-width:4;stroke-dasharray:14 9}
+      .text{font:30px Arial,sans-serif;fill:#000}
+      .bold{font:700 28px Courier New,monospace;fill:#000}
+      .math{font:italic 42px Georgia,serif;fill:#000}
+      .tagText{font:italic 38px Georgia,serif;fill:#2169b7}
+      .arrow{fill:none;stroke:#09253d;stroke-width:4;marker-end:url(#arrow)}
+      .dashArrow{fill:none;stroke:#09253d;stroke-width:3;stroke-dasharray:8 8;marker-end:url(#arrow)}
+      .grayArrow{fill:none;stroke:#718291;stroke-width:3;stroke-dasharray:12 10;marker-end:url(#grayArrow)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#09253d"/>
+    </marker>
+    <marker id="grayArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#718291"/>
+    </marker>
+  </defs>
+  <rect width="1704" height="764" fill="#fff"/>
+
+  <g transform="translate(40 32)">
+    <rect x="0" y="0" width="172" height="84" rx="13" class="box"/>
+    <text x="68" y="58" class="math">q</text>
+    <polygon points="88,60 188,60 188,104 106,104 80,78" class="tag"/>
+    <text x="126" y="91" class="tagText">tag</text>
+    <rect x="190" y="0" width="710" height="84" rx="13" class="cot"/>
+    <text x="512" y="58" class="math">cot</text>
+    <rect x="916" y="4" width="200" height="84" rx="13" class="ans"/>
+    <text x="1000" y="62" class="math">a</text>
+
+    <rect x="0" y="104" width="1116" height="320" rx="24" class="depth1"/>
+    <text x="982" y="136" class="bold">depth = 1</text>
+    <text x="464" y="128" class="bold">split</text>
+    <path d="M545 84v62" class="arrow"/>
+    <rect x="190" y="146" width="162" height="84" rx="12" class="cot"/>
+    <text x="230" y="198" class="math">Step₁</text>
+    <rect x="366" y="146" width="200" height="84" rx="12" class="cot"/>
+    <text x="424" y="198" class="math">Step₂</text>
+    <rect x="582" y="146" width="128" height="84" rx="12" class="cot"/>
+    <text x="602" y="198" class="math">Step₃</text>
+    <rect x="724" y="146" width="178" height="84" rx="12" class="cot"/>
+    <text x="766" y="198" class="math">Step₄</text>
+
+    <text x="148" y="265" class="bold">create</text>
+    <text x="24" y="298" class="bold">question + tag</text>
+    <path d="M272 230v76" class="arrow"/>
+    <path d="M466 230v58" class="dashArrow"/>
+    <path d="M646 230v58" class="dashArrow"/>
+    <path d="M813 230v58" class="dashArrow"/>
+    <rect x="190" y="308" width="162" height="84" rx="12" class="box"/>
+    <text x="244" y="362" class="math">q₁</text>
+    <polygon points="316,368 398,368 398,414 336,414 294,390" class="tag"/>
+    <text x="342" y="402" class="tagText" font-size="28">tag₁</text>
+    <text x="354" y="342" class="bold">solve</text>
+    <path d="M352 350h72" class="arrow"/>
+    <rect x="424" y="308" width="488" height="84" rx="12" class="green"/>
+    <text x="626" y="362" class="math">cot₁</text>
+    <text x="1008" y="302" class="bold">verify</text>
+    <rect x="916" y="310" width="178" height="84" rx="12" fill="#fac5ad" stroke="#8a3d19" stroke-width="3"/>
+    <text x="982" y="364" class="math">a₁</text>
+
+    <rect x="0" y="444" width="1116" height="270" rx="24" class="depth2"/>
+    <text x="982" y="482" class="bold">depth = 2</text>
+    <text x="584" y="472" class="bold">split</text>
+    <path d="M668 392v94" class="arrow"/>
+    <rect x="424" y="492" width="162" height="84" rx="12" class="greenDash"/>
+    <text x="456" y="546" class="math" font-size="34">Step₁₁</text>
+    <rect x="596" y="492" width="180" height="84" rx="12" class="greenDash"/>
+    <text x="642" y="546" class="math" font-size="34">Step₁₂</text>
+    <rect x="786" y="492" width="128" height="84" rx="12" class="greenDash"/>
+    <text x="804" y="546" class="math" font-size="34">Step₁₃</text>
+    <text x="307" y="572" class="bold">create</text>
+    <text x="182" y="604" class="bold">question + tag</text>
+    <path d="M505 576v54" class="dashArrow"/>
+    <rect x="424" y="606" width="162" height="84" rx="12" fill="#eef2f8" stroke="#09253d" stroke-width="4"/>
+    <text x="476" y="660" class="math">q₁₁</text>
+    <polygon points="508,668 612,668 612,710 538,710 488,690" class="tag"/>
+    <text x="548" y="701" class="tagText" font-size="27">tag₁₁</text>
+    <path d="M586 648h106" class="grayArrow"/>
+    <rect x="690" y="606" width="286" height="84" rx="12" class="cotDash"/>
+    <text x="778" y="660" class="math">cot₁₁</text>
+  </g>
+
+  <g transform="translate(1218 140)">
+    <text x="88" y="0" font="700 30px Arial">Graph of tags and</text>
+    <text x="66" y="36" font="700 30px Arial">associated problems</text>
+    <polygon points="178,78 316,78 316,148 178,148 144,113" class="tag"/>
+    <text x="226" y="128" class="tagText">tag</text>
+    <path d="M316 112 C360 112 358 183 298 198 C230 214 214 238 214 252" class="arrow"/>
+    <polygon points="124,250 262,250 262,320 124,320 90,285" class="tag"/>
+    <text x="175" y="300" class="tagText">tag₁</text>
+    <path d="M262 285 C326 270 286 238 360 232 L438 232 L438 302 L360 302 C326 282 302 304 262 318" class="dashArrow"/>
+    <path d="M125 284 C84 282 74 318 58 352 L0 380" class="dashArrow"/>
+    <path d="M212 320 C212 360 260 384 278 398" class="arrow"/>
+    <path d="M262 306 C312 340 330 340 352 370" class="dashArrow"/>
+    <polygon points="210,404 350,404 350,474 210,474 176,439" class="tag"/>
+    <text x="252" y="454" class="tagText">tag₁₁</text>
+  </g>
+</svg>

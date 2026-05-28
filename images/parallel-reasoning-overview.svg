@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1866 792" role="img" aria-labelledby="title desc">
+  <title id="title">Parallel reasoning overview</title>
+  <desc id="desc">A flow diagram for instilling parallel reasoning into language models, showing thread generation, thread instruction execution, and result aggregation.</desc>
+  <defs>
+    <style>
+      .label{font:30px Arial,sans-serif;fill:#050505}
+      .math{font:italic 30px Georgia,serif;fill:#050505}
+      .box{fill:#a9d2f4;stroke:#062232;stroke-width:3}
+      .purple{fill:#dfc7ef;stroke:#062232;stroke-width:3}
+      .circle{fill:#c5abd8;stroke:#062232;stroke-width:3}
+      .green{fill:#a8dc9e;stroke:#062232;stroke-width:3}
+      .think{fill:#a6ba9a;stroke:#062232;stroke-width:3}
+      .white{fill:#fff;stroke:#111;stroke-width:3}
+      .blueLine{stroke:#1f66a9;stroke-width:5;stroke-dasharray:16 9}
+      .purpleLine{stroke:#6f2aa5;stroke-width:5;stroke-dasharray:16 9}
+      .greenLine{stroke:#196b2c;stroke-width:5;stroke-dasharray:16 9}
+      .wire{fill:none;stroke:#000;stroke-width:4}
+      .arrow{fill:none;stroke:#000;stroke-width:4;marker-end:url(#arrow)}
+      .softBg{fill:#f8fbff;opacity:.85}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect width="1866" height="792" fill="#fff"/>
+
+  <line x1="280" y1="30" x2="280" y2="760" class="blueLine"/>
+  <line x1="612" y1="30" x2="612" y2="760" class="purpleLine"/>
+  <line x1="1338" y1="30" x2="1338" y2="760" class="greenLine"/>
+  <rect x="292" y="32" width="300" height="52" class="softBg"/>
+  <text x="294" y="70" class="label">Thread Generation</text>
+  <rect x="625" y="32" width="490" height="52" class="softBg"/>
+  <text x="628" y="70" class="label">Thread Instruction Execution</text>
+  <rect x="1358" y="32" width="310" height="52" fill="#f8fff8" opacity=".85"/>
+  <text x="1360" y="70" class="label">Result Aggregation</text>
+
+  <rect x="35" y="396" width="140" height="88" rx="13" class="white"/>
+  <text x="70" y="438" class="label">Input</text>
+  <text x="96" y="474" class="math">x</text>
+  <path d="M175 440h24" class="arrow"/>
+  <circle cx="280" cy="442" r="79" fill="#90b9dc" stroke="#062232" stroke-width="3"/>
+  <text x="218" y="452" class="label">Diversify</text>
+
+  <path d="M359 442h30" class="wire"/>
+  <path d="M389 442V222h22" class="wire"/>
+  <path d="M389 442h22" class="wire"/>
+  <path d="M389 442v132h22" class="wire"/>
+  <path d="M389 442v225h22" class="wire"/>
+
+  <text x="497" y="182" class="math">i</text>
+  <rect x="412" y="190" width="188" height="60" rx="9" class="box"/>
+  <text x="418" y="230" class="label">Instruction 1</text>
+  <rect x="412" y="412" width="188" height="60" rx="9" class="box"/>
+  <text x="418" y="452" class="label">Instruction 2</text>
+  <rect x="412" y="544" width="188" height="60" rx="9" class="box"/>
+  <text x="492" y="586" class="label">...</text>
+  <rect x="412" y="637" width="188" height="60" rx="9" class="box"/>
+  <text x="418" y="677" class="label">Instruction <tspan font-style="italic">n</tspan></text>
+
+  <path d="M600 220h34" class="arrow"/><path d="M600 442h34" class="arrow"/><path d="M600 667h34" class="arrow"/>
+  <circle cx="720" cy="220" r="87" class="circle"/><text x="637" y="231" class="label">Decompose</text>
+  <circle cx="720" cy="442" r="87" class="circle"/><text x="637" y="453" class="label">Decompose</text>
+  <circle cx="720" cy="667" r="87" class="circle"/><text x="637" y="678" class="label">Decompose</text>
+
+  <text x="875" y="106" class="label">Sub computation</text>
+  <path d="M807 220h34" class="arrow"/>
+  <path d="M841 220V144h34" class="wire"/><path d="M841 220h34" class="wire"/><path d="M841 220v80h34" class="wire"/>
+  <rect x="875" y="112" width="188" height="60" rx="9" class="purple"/><text x="947" y="152" class="label">1:A</text>
+  <rect x="875" y="191" width="188" height="60" rx="9" class="purple"/><text x="947" y="231" class="label">1:B</text>
+  <rect x="875" y="270" width="188" height="60" rx="9" class="purple"/><text x="947" y="310" class="label">1:C</text>
+  <path d="M1063 144h32v76h34" class="wire"/><path d="M1063 220h66" class="arrow"/><path d="M1063 300h32v-80h34" class="wire"/>
+  <rect x="1130" y="190" width="188" height="60" rx="9" class="green"/><text x="1144" y="230" class="label">Response 1</text>
+
+  <text x="875" y="367" class="label">Sub computation</text>
+  <path d="M807 442h34" class="arrow"/>
+  <path d="M841 442V400h34" class="wire"/><path d="M841 442v42h34" class="wire"/>
+  <rect x="875" y="368" width="188" height="60" rx="9" class="purple"/><text x="947" y="408" class="label">2:A</text>
+  <rect x="875" y="457" width="188" height="60" rx="9" class="purple"/><text x="947" y="497" class="label">2:B</text>
+  <path d="M1063 400h32v42h34" class="wire"/><path d="M1063 484h32v-42h34" class="wire"/>
+  <rect x="1130" y="412" width="188" height="60" rx="9" class="green"/><text x="1144" y="452" class="label">Response 2</text>
+
+  <text x="868" y="634" class="label">Sub computation</text>
+  <path d="M807 667h68" class="arrow"/>
+  <rect x="875" y="637" width="188" height="60" rx="9" class="purple"/><text x="947" y="677" class="label"><tspan font-style="italic">n</tspan>:A</text>
+  <path d="M1063 667h66" class="arrow"/>
+  <rect x="1130" y="637" width="188" height="60" rx="9" class="green"/><text x="1144" y="677" class="label">Response <tspan font-style="italic">n</tspan></text>
+
+  <text x="1213" y="182" class="math">r</text>
+  <path d="M1318 220h40v220h60" class="wire"/>
+  <path d="M1318 442h100" class="arrow"/>
+  <path d="M1318 667h40v-225h60" class="wire"/>
+  <rect x="1415" y="341" width="188" height="198" rx="9" class="think"/>
+  <text x="1473" y="435" class="label">Think</text>
+  <text x="1506" y="472" class="math">c</text>
+  <path d="M1603 441h37" class="arrow"/>
+  <rect x="1640" y="396" width="158" height="88" rx="13" class="white"/>
+  <text x="1670" y="436" class="label">Answer</text>
+  <text x="1716" y="474" class="math">a</text>
+</svg>

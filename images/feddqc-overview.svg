@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1746 526" role="img" aria-labelledby="title desc">
+  <title id="title">FedDQC overview</title>
+  <desc id="desc">Overview of FedDQC with a scoring stage, sort and select step, hierarchical federated training, and instruction-response alignment scoring.</desc>
+  <defs>
+    <style>
+      .title{font:700 30px Arial,sans-serif;fill:#000}
+      .label{font:28px Arial,sans-serif;fill:#000}
+      .small{font:22px Arial,sans-serif;fill:#000}
+      .hand{font:700 24px Comic Sans MS,Arial,sans-serif;fill:#000}
+      .panel{fill:#fff4dd;stroke:#000;stroke-width:3}
+      .bar{fill:#8a7f88}
+      .arrow{fill:none;stroke:#000;stroke-width:3;marker-end:url(#arrow)}
+      .pipe{fill:none;stroke:#cfe1f1;stroke-width:20;stroke-linecap:round}
+      .pipeEdge{fill:none;stroke:#000;stroke-width:3}
+      .cubeBlue{fill:#4f91b3;stroke:#000;stroke-width:3}
+      .cubeLight{fill:#d6e9ef;stroke:#000;stroke-width:3}
+      .cubeTan{fill:#ffe0c6;stroke:#000;stroke-width:3}
+      .cubeGreen{fill:#b9dc8a;stroke:#000;stroke-width:3}
+      .check{fill:#0d1117}.orange{fill:#ffb079}.white{fill:#fff}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect width="1746" height="526" fill="#fff"/>
+
+  <g transform="translate(45 98)">
+    <polygon points="0,20 22,0 85,2 105,18 105,72 82,92 0,92" class="cubeBlue"/>
+    <polyline points="0,20 82,22 105,18M82,22 82,92" fill="none" stroke="#000" stroke-width="3"/>
+    <text x="-22" y="126" class="label">Local Data</text>
+  </g>
+  <path d="M156 133h50" class="arrow"/>
+
+  <g transform="translate(218 54)">
+    <text x="0" y="-16" class="title">Stage 1: Scoring Stage</text>
+    <path d="M0 26 C0 0 20 0 42 0 L230 0 C250 0 260 20 260 40 L260 132 C260 155 238 164 210 164 L45 164 C15 164 0 145 0 118 Z" class="panel"/>
+    <path d="M0 26 C0 0 20 0 42 0 L230 0 C250 0 260 20 260 40 L260 52 L0 52 Z" class="bar"/>
+    <circle cx="42" cy="28" r="12" class="orange" stroke="#000" stroke-width="3"/><circle cx="73" cy="28" r="12" class="white" stroke="#000" stroke-width="3"/>
+    <text x="94" y="40" font="700 30px Arial" fill="#fff">Scoring</text>
+    <text x="20" y="148" class="hand">Global Model</text>
+    <path d="M90 104h44" class="arrow"/><text x="138" y="95" class="hand">Sample1</text><rect x="205" y="70" width="48" height="30" rx="5" fill="#6abf45"/><text x="216" y="94" fill="#fff" font="700 22px Arial">0.8</text>
+    <text x="138" y="132" class="hand">Sample2</text><rect x="205" y="108" width="48" height="30" rx="5" fill="#ffb300"/><text x="216" y="132" fill="#fff" font="700 22px Arial">0.1</text>
+    <path d="M34 55c-18 20-18 82 0 100M64 55c18 20 18 82 0 100M34 85h30M34 118h30" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="100" r="11" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="46" cy="98" r="2"/><circle cx="54" cy="98" r="2"/>
+  </g>
+  <path d="M497 130h38" class="arrow"/>
+
+  <g transform="translate(558 55)">
+    <path d="M0 26 C0 0 20 0 44 0 L240 0 C262 0 282 18 282 42 L282 130 C282 154 260 164 238 164 L44 164 C20 164 0 144 0 120 Z" class="panel"/>
+    <path d="M0 26 C0 0 20 0 44 0 L240 0 C262 0 282 18 282 42 L282 52 L0 52 Z" class="bar"/>
+    <circle cx="30" cy="28" r="12" class="orange" stroke="#000" stroke-width="3"/><circle cx="61" cy="28" r="12" class="white" stroke="#000" stroke-width="3"/>
+    <text x="82" y="40" font="700 30px Arial" fill="#fff">Sort &amp; Select</text>
+    <rect x="24" y="67" width="78" height="72" fill="#fff4dd" stroke="#000" stroke-width="4" transform="rotate(2 63 103)"/>
+    <polyline points="38,118 58,105 70,112 92,90" fill="none" stroke="#000" stroke-width="3"/>
+    <text x="36" y="162" class="hand">Random</text>
+    <path d="M120 105h43" class="arrow"/>
+    <rect x="174" y="67" width="78" height="72" fill="#fff4dd" stroke="#000" stroke-width="4" transform="rotate(2 213 103)"/>
+    <polyline points="188,118 206,100 220,95 237,82" fill="none" stroke="#000" stroke-width="3"/>
+    <text x="140" y="162" class="hand">Sorted Dataset</text>
+  </g>
+  <path d="M856 132h40" class="arrow"/>
+
+  <g transform="translate(914 103)">
+    <text x="8" y="-20" class="hand">Low</text><text x="166" y="-20" class="hand">High</text>
+    <path d="M55 -25 C80 -22 100 -25 130 -24" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <text x="78" y="-40" class="hand">Score</text>
+    <rect x="0" y="0" width="42" height="72" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="8 8"/>
+    <polygon points="52,14 68,0 112,2 126,14 126,72 108,90 52,90" class="cubeLight"/>
+    <polygon points="98,14 114,0 158,2 172,14 172,72 154,90 98,90" class="cubeBlue" opacity=".75"/>
+    <polygon points="144,14 160,0 204,2 218,14 218,72 200,90 144,90" class="cubeBlue"/>
+    <text x="0" y="126" class="hand">Delete</text>
+  </g>
+
+  <path d="M1132 145 H1165 V438 H1085" class="pipe"/>
+  <path d="M1132 145 H1165 V438 H1085" class="pipeEdge"/>
+  <path d="M1101 418 l-36 20 l36 20" fill="none" stroke="#000" stroke-width="3"/>
+
+  <g transform="translate(75 352)">
+    <text x="-30" y="94" class="hand">Global Model</text>
+    <path d="M30 15c-18 20-18 82 0 100M60 15c18 20 18 82 0 100M30 45h30M30 78h30" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="46" cy="60" r="11" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="42" cy="58" r="2"/><circle cx="50" cy="58" r="2"/>
+  </g>
+  <path d="M184 456 V198 C184 178 194 166 212 166" class="pipe"/>
+  <path d="M184 456 V198 C184 178 194 166 212 166" class="pipeEdge"/>
+
+  <g transform="translate(218 283)">
+    <text x="20" y="-14" class="title">Step 2: Hierarchical Training Stage</text>
+    <path d="M0 26 C0 0 20 0 46 0 L830 0 C858 0 872 24 872 52 L872 196 C872 224 850 230 816 230 L50 230 C15 230 0 210 0 180 Z" class="panel"/>
+    <path d="M0 26 C0 0 20 0 46 0 L830 0 C858 0 872 24 872 52 L872 64 L0 64 Z" class="bar"/>
+    <circle cx="38" cy="28" r="12" class="orange" stroke="#000" stroke-width="3"/><circle cx="69" cy="28" r="12" class="white" stroke="#000" stroke-width="3"/>
+    <text x="92" y="40" font="700 30px Arial" fill="#fff">Hierarchical Federated Training</text>
+    <polygon points="48,90 62,76 95,78 108,90 108,122 92,137 48,137" class="cubeLight"/>
+    <circle cx="68" cy="108" r="16" class="check"/><path d="M58 108l8 8 18-22" stroke="#fff" stroke-width="4" fill="none"/>
+    <text x="118" y="108" class="label">Selected for training</text>
+    <polygon points="386,90 400,76 433,78 446,90 446,122 430,137 386,137" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="458" y="108" class="label">Not selected</text>
+    <text x="218" y="154" class="label">Client 1</text><text x="400" y="154" class="label">Client 2</text><text x="592" y="154" class="label">Client 3</text>
+    <text x="7" y="212" class="label">Round n-m</text>
+    <g transform="translate(188 168)">
+      <polygon points="0,14 16,0 52,2 66,14 66,48 50,64 0,64" class="cubeLight"/><polygon points="46,14 62,0 98,2 112,14 112,48 96,64 46,64" class="cubeBlue" opacity=".7"/><polygon points="92,14 108,0 144,2 158,14 158,48 142,64 92,64" class="cubeBlue"/><circle cx="126" cy="42" r="16" class="check"/><path d="M116 42l8 8 18-22" stroke="#1f9bff" stroke-width="4" fill="none"/>
+    </g>
+    <g transform="translate(372 168)">
+      <polygon points="0,14 16,0 52,2 66,14 66,48 50,64 0,64" class="cubeTan"/><polygon points="46,14 62,0 98,2 112,14 112,48 96,64 46,64" class="cubeTan"/><polygon points="92,14 108,0 144,2 158,14 158,48 142,64 92,64" class="cubeTan" opacity=".8"/><circle cx="126" cy="42" r="16" class="check"/><path d="M116 42l8 8 18-22" stroke="#f6a678" stroke-width="4" fill="none"/>
+    </g>
+    <g transform="translate(560 168)">
+      <polygon points="0,14 16,0 52,2 66,14 66,48 50,64 0,64" class="cubeGreen"/><polygon points="46,14 62,0 98,2 112,14 112,48 96,64 46,64" class="cubeGreen"/><polygon points="92,14 108,0 144,2 158,14 158,48 142,64 92,64" fill="#6fbf3d" stroke="#000" stroke-width="3"/><circle cx="126" cy="42" r="16" class="check"/><path d="M116 42l8 8 18-22" stroke="#35c432" stroke-width="4" fill="none"/>
+    </g>
+    <g transform="translate(744 112)">
+      <text x="-8" y="104" class="hand">Global Model</text>
+      <path d="M30 0c-18 20-18 82 0 100M60 0c18 20 18 82 0 100M30 30h30M30 63h30" stroke="#000" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="46" cy="45" r="11" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="42" cy="43" r="2"/><circle cx="50" cy="43" r="2"/>
+    </g>
+  </g>
+
+  <g transform="translate(1262 83)">
+    <path d="M0 44 C0 8 28 0 64 0 L342 0 C408 0 432 48 432 98 L432 346 C432 400 396 410 346 410 L70 410 C24 410 0 382 0 335 Z" class="panel"/>
+    <path d="M0 44 C0 8 28 0 64 0 L342 0 C408 0 432 48 432 98 L432 54 L0 54 Z" class="bar"/>
+    <circle cx="44" cy="30" r="12" class="orange" stroke="#000" stroke-width="3"/><circle cx="75" cy="30" r="12" class="white" stroke="#000" stroke-width="3"/>
+    <text x="98" y="43" font="700 30px Arial" fill="#fff">Scoring</text>
+    <circle cx="176" cy="160" r="72" fill="#7fa1d5" opacity=".85"/><circle cx="258" cy="160" r="72" fill="#f7a25d" opacity=".85"/>
+    <text x="116" y="166" class="small">H(Q)</text><text x="196" y="166" class="small">I(A|Q)</text><text x="286" y="166" class="small">H(A)</text>
+    <text x="20" y="284" class="label">Instruction-Response Alignment</text>
+    <text x="24" y="350" font="700 30px Georgia,serif">IRA = L(</text>
+    <rect x="132" y="314" width="48" height="52" rx="8" fill="#f47b34"/><text x="150" y="350" font="700 24px Arial" fill="#fff">A</text>
+    <text x="185" y="350" font="700 30px Georgia,serif">,</text>
+    <text x="215" y="350" class="hand">🐐</text>
+    <text x="258" y="350" font="700 30px Georgia,serif">) − L(</text>
+    <rect x="318" y="318" width="70" height="48" rx="8" fill="#5c86d6"/><text x="333" y="350" font="700 22px Arial" fill="#fff">A|Q</text>
+    <text x="392" y="350" font="700 30px Georgia,serif">,</text>
+    <text x="405" y="350" class="hand">🐐</text>
+    <path d="M222 354 C248 384 270 392 305 372" class="arrow"/>
+    <text x="244" y="398" class="hand">Global Model</text>
+  </g>
+</svg>
