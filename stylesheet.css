@@ -677,7 +677,7 @@ h3 {
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,650;6..12,750;6..12,850&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 /* Plum editorial theme. */
 :root {
@@ -693,8 +693,8 @@ h3 {
 }
 
 body {
-  font-family: "Nunito Sans", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-family: Manrope, Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15.6px;
   line-height: 1.68;
   letter-spacing: 0;
 }
@@ -744,7 +744,7 @@ h3,
 .kicker,
 .eyebrow,
 .pub-links a {
-  font-family: "Nunito Sans", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-family: Manrope, Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 }
 
 h3 {
