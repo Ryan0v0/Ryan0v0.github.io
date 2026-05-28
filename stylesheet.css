@@ -219,14 +219,11 @@ h3 {
 }
 
 .job-market-highlight {
-  margin: 10px 0 14px;
-  border: 1px solid #eadde8;
-  border-radius: 8px;
-  background: #fff7fc;
-  padding: 10px 14px;
+  margin: 10px 0 16px;
+  padding: 0;
   color: #4d3244;
-  font-weight: 750;
-  line-height: 1.45;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .link-row a,
