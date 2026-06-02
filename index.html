@@ -193,7 +193,6 @@
           <button class="publication-filter-button" type="button" data-publication-topic="ml-systems" aria-pressed="false">ML Systems</button>
           <button class="publication-filter-button" type="button" data-publication-topic="proposals" aria-pressed="false">Proposals</button>
         </div>
-        <p class="publication-filter-status" aria-live="polite"></p>
       </div>
       <div class="publication-list">
         <article class="publication featured-publication" data-selected="true" data-topics="llm-data evaluation multi-modal-lm">
@@ -426,7 +425,6 @@
       const viewButtons = Array.from(document.querySelectorAll("[data-publication-view]"));
       const topicControls = document.querySelector(".publication-topic-controls");
       const topicButtons = Array.from(document.querySelectorAll("[data-publication-topic]"));
-      const status = document.querySelector(".publication-filter-status");
       let currentView = "selected";
       let currentTopic = "all";
 
@@ -486,8 +484,6 @@
         });
 
         topicControls.hidden = !topicMode;
-        const label = currentView === "selected" ? "selected publications" : "publications";
-        status.textContent = `Showing ${label}.`;
       };
 
       viewButtons.forEach((button) => {
