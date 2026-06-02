@@ -122,6 +122,33 @@ main {
   padding: 22px;
 }
 
+.news-scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-color: rgba(138, 47, 107, 0.42) transparent;
+  scrollbar-width: thin;
+}
+
+.news-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+  border: 2px solid var(--panel);
+  border-radius: 999px;
+  background: rgba(138, 47, 107, 0.38);
+}
+
+.news-scroll:focus-visible {
+  outline: 2px solid rgba(138, 47, 107, 0.42);
+  outline-offset: 4px;
+}
+
 .eyebrow,
 .kicker {
   margin: 0 0 10px;
@@ -938,6 +965,10 @@ h3 {
     padding: 18px;
   }
 
+  .news-scroll {
+    max-height: 300px;
+  }
+
   .profile-photo img {
     width: min(160px, 48vw);
   }
@@ -1042,6 +1073,11 @@ h3 {
 
   .profile-panel {
     padding: 15px;
+  }
+
+  .news-scroll {
+    max-height: 280px;
+    padding-right: 6px;
   }
 
   .profile-photo img {
