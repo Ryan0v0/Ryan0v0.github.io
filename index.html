@@ -171,10 +171,29 @@
 
     <section class="section" id="publications">
       <div class="section-heading">
-        <p class="kicker">Selected Publications</p>
+        <p class="kicker">Publications</p>
+      </div>
+      <div class="publication-controls" aria-label="Publication display controls">
+        <div class="publication-view-controls">
+          <button class="publication-filter-button is-active" type="button" data-publication-view="selected" aria-pressed="true">Selected</button>
+          <button class="publication-filter-button" type="button" data-publication-view="date" aria-pressed="false">All by date</button>
+          <button class="publication-filter-button" type="button" data-publication-view="topic" aria-pressed="false">All by topic</button>
+        </div>
+        <div class="publication-topic-controls" hidden>
+          <button class="publication-filter-button is-active" type="button" data-publication-topic="all" aria-pressed="true">All topics</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="llm-data" aria-pressed="false">LLM Data</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="multi-modal-lm" aria-pressed="false">Multi-Modal LM</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="modularity" aria-pressed="false">Modularity</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="ai-safety" aria-pressed="false">AI Safety</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="evaluation" aria-pressed="false">Evaluation &amp; Benchmarks</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="reasoning" aria-pressed="false">Reasoning</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="ml-systems" aria-pressed="false">ML Systems</button>
+          <button class="publication-filter-button" type="button" data-publication-topic="proposals" aria-pressed="false">Proposals</button>
+        </div>
+        <p class="publication-filter-status" aria-live="polite"></p>
       </div>
       <div class="publication-list">
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data evaluation">
           <a class="publication-image" href="images/toksuite-overview.png" aria-label="Open TokSuite overview figure">
             <img src="images/toksuite-overview.png" alt="TokSuite overview figure showing tokenizer behavior across languages and perturbations">
           </a>
@@ -186,7 +205,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2512.20757">Paper</a><a href="https://github.com/r-three/Tokenizers">Code</a><a href="https://huggingface.co/toksuite">HuggingFace</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="modularity">
           <a class="publication-image" href="images/dpsl-overview.png" aria-label="Open DPSL overview figure">
             <img src="images/dpsl-overview.png" alt="DPSL overview figure showing sparse upcycling and separate Dirichlet priors">
           </a>
@@ -197,7 +216,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2510.01185">Paper</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data ml-systems">
           <a class="publication-image" href="images/adapt-overview.png" aria-label="Open ADAPT overview figure">
             <img src="images/adapt-overview.png" alt="ADAPT overview figure comparing average MMLU and BBH accuracy versus FLOPs">
           </a>
@@ -208,7 +227,7 @@
             <div class="pub-links"><a href="https://openreview.net/pdf?id=UFwnsmFZ6R">Paper</a><a href="https://x.com/Renee42581826/status/2047141558273585225">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="modularity ml-systems">
           <a class="publication-image" href="images/cascadia-overview.png" aria-label="Open Cascadia overview figure">
             <img src="images/cascadia-overview.png" alt="Cascadia overview figure showing routing management, cascade inference, and parallel serving deployment">
           </a>
@@ -219,7 +238,7 @@
             <div class="pub-links"><a href="https://arxiv.org/pdf/2506.04203">Paper</a><a href="https://x.com/Renee42581826/status/2048080409565536625">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data reasoning">
           <a class="publication-image" href="images/dataset-decomposition-overview.svg" aria-label="Open dataset decomposition overview figure">
             <img src="images/dataset-decomposition-overview.svg" alt="Dataset decomposition overview figure showing recursive splitting into tagged subproblems">
           </a>
@@ -230,7 +249,7 @@
             <div class="pub-links"><a href="https://openreview.net/forum?id=KIRhqnXT77">Paper</a><a href="https://x.com/Renee42581826/status/1996664792510038020">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data">
           <a class="publication-image" href="https://clues-llmdataquality.github.io">
             <img src="images/clues-overview.png" alt="CLUES overview figure">
           </a>
@@ -241,7 +260,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2507.03004">Paper</a><a href="https://github.com/Ryan0v0/CLUES">Code</a><a href="https://clues-llmdataquality.github.io">Website</a><a href="https://x.com/Renee42581826/status/1866379149956546904">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data modularity">
           <a class="publication-image" href="https://arxiv.org/abs/2507.03003">
             <img src="images/multilingual-federated-prompt-tuning.png" alt="Multilingual federated prompt tuning overview figure">
           </a>
@@ -252,7 +271,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2507.03003">Paper</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="llm-data modularity">
           <a class="publication-image" href="images/feddqc-overview.svg" aria-label="Open FedDQC overview figure">
             <img src="images/feddqc-overview.svg" alt="FedDQC overview figure showing scoring, selection, hierarchical federated training, and instruction-response alignment">
           </a>
@@ -263,7 +282,7 @@
             <div class="pub-links"><a href="https://aclanthology.org/2025.findings-acl.791/">Paper</a><a href="https://arxiv.org/abs/2410.11540">arXiv</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="modularity reasoning">
           <a class="publication-image" href="images/parallel-reasoning-overview.svg" aria-label="Open parallel reasoning overview figure">
             <img src="images/parallel-reasoning-overview.svg" alt="Parallel reasoning overview figure showing thread generation, thread instruction execution, and result aggregation">
           </a>
@@ -274,7 +293,7 @@
             <div class="pub-links"><a href="https://openreview.net/forum?id=a3o4b3hkwp">Paper</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="evaluation reasoning">
           <a class="publication-image" href="https://arxiv.org/abs/2406.13975">
             <img src="images/mr-ben-overview.png" alt="MR-BEN overview figure">
           </a>
@@ -285,7 +304,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2406.13975">Paper</a><a href="https://x.com/Ruiss1/status/1806317002564219200">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="modularity proposals">
           <a class="publication-image" href="images/prompt-tuning-diffusion.png" aria-label="Open Prompt Tuning with Diffusion overview figure">
             <img src="images/prompt-tuning-diffusion.png" alt="Prompt Tuning with Diffusion overview figure">
           </a>
@@ -296,7 +315,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2411.01168">Paper</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="evaluation ml-systems reasoning">
           <a class="publication-image" href="https://arxiv.org/abs/2502.13921">
             <img src="images/hls-codegen-overview.png" alt="HLS-based hardware generation benchmark overview figure">
           </a>
@@ -307,7 +326,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2502.13921">Paper</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="ai-safety evaluation">
           <a class="publication-image" href="https://arxiv.org/abs/2404.16891">
             <img src="images/third-party-api-attacks.png" alt="Attacks on third-party APIs of large language models overview figure">
           </a>
@@ -318,7 +337,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2404.16891">Paper</a><a href="https://github.com/vk0812/Third-Party-Attacks-on-LLMs">Code</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="ai-safety proposals">
           <a class="publication-image" href="https://arxiv.org/abs/2302.10329">
             <img src="images/facct-harms-overview.png" alt="Harms from increasingly agentic algorithmic systems overview figure">
           </a>
@@ -329,7 +348,7 @@
             <div class="pub-links"><a href="https://arxiv.org/abs/2302.10329">Paper</a><a href="https://x.com/_achan96_/status/1656690639264792579">Twitter</a></div>
           </div>
         </article>
-        <article class="publication featured-publication">
+        <article class="publication featured-publication" data-selected="true" data-topics="evaluation multi-modal-lm reasoning">
           <a class="publication-image" href="images/sde-overview.png" aria-label="Open scientific discovery evaluation overview figure">
             <img src="images/sde-overview.png" alt="Scientific discovery evaluation overview figure">
           </a>
@@ -398,6 +417,86 @@
       </a>
     </div>
   </footer>
+  <script>
+    (() => {
+      const publications = Array.from(document.querySelectorAll(".publication-list .publication"));
+      const viewButtons = Array.from(document.querySelectorAll("[data-publication-view]"));
+      const topicControls = document.querySelector(".publication-topic-controls");
+      const topicButtons = Array.from(document.querySelectorAll("[data-publication-topic]"));
+      const status = document.querySelector(".publication-filter-status");
+      let currentView = "selected";
+      let currentTopic = "all";
+
+      const selectedCount = publications.filter((publication) => publication.dataset.selected !== "false").length;
+      const topicCounts = publications.reduce((counts, publication) => {
+        (publication.dataset.topics || "").split(/\s+/).filter(Boolean).forEach((topic) => {
+          counts[topic] = (counts[topic] || 0) + 1;
+        });
+        return counts;
+      }, {});
+
+      viewButtons.forEach((button) => {
+        button.dataset.label = button.textContent.trim();
+      });
+      topicButtons.forEach((button) => {
+        const topic = button.dataset.publicationTopic;
+        button.dataset.label = button.textContent.trim();
+        const count = topic === "all" ? publications.length : topicCounts[topic] || 0;
+        button.textContent = `${button.dataset.label} (${count})`;
+      });
+      document.querySelector("[data-publication-view='selected']").textContent = `Selected (${selectedCount})`;
+      document.querySelector("[data-publication-view='date']").textContent = `All by date (${publications.length})`;
+
+      const setActive = (buttons, attribute, value) => {
+        buttons.forEach((button) => {
+          const active = button.dataset[attribute] === value;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      };
+
+      const updatePublications = () => {
+        const topicMode = currentView === "topic";
+        let shown = 0;
+
+        publications.forEach((publication) => {
+          const selected = publication.dataset.selected !== "false";
+          const topics = (publication.dataset.topics || "").split(/\s+/);
+          const visibleByView = currentView === "selected" ? selected : true;
+          const visibleByTopic = !topicMode || currentTopic === "all" || topics.includes(currentTopic);
+          const visible = visibleByView && visibleByTopic;
+          publication.classList.toggle("is-hidden", !visible);
+          shown += visible ? 1 : 0;
+        });
+
+        topicControls.hidden = !topicMode;
+        const label = currentView === "selected" ? "selected publications" : "publications";
+        status.textContent = `Showing ${shown} ${label}.`;
+      };
+
+      viewButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          currentView = button.dataset.publicationView;
+          if (currentView !== "topic") currentTopic = "all";
+          setActive(viewButtons, "publicationView", currentView);
+          setActive(topicButtons, "publicationTopic", currentTopic);
+          updatePublications();
+        });
+      });
+
+      topicButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          currentView = "topic";
+          currentTopic = button.dataset.publicationTopic;
+          setActive(viewButtons, "publicationView", currentView);
+          setActive(topicButtons, "publicationTopic", currentTopic);
+          updatePublications();
+        });
+      });
+
+      updatePublications();
+    })();
+  </script>
 </body>
 
 </html>

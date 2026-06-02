@@ -373,6 +373,59 @@ h3 {
   gap: 14px;
 }
 
+.publication-controls {
+  display: grid;
+  gap: 10px;
+  margin: -8px 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 12px;
+}
+
+.publication-view-controls,
+.publication-topic-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.publication-filter-button {
+  min-height: 32px;
+  border: 1px solid #d9cad6;
+  border-radius: 999px;
+  background: #fffafd;
+  padding: 5px 13px;
+  color: #5f5260;
+  cursor: pointer;
+  font-family: "Manrope", Avenir, "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 750;
+  letter-spacing: 0;
+}
+
+.publication-filter-button:hover,
+.publication-filter-button:focus-visible {
+  border-color: #b4749c;
+  color: #8a2f6b;
+}
+
+.publication-filter-button.is-active {
+  border-color: #8a2f6b;
+  background: #8a2f6b;
+  color: #fff;
+}
+
+.publication-filter-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.publication.is-hidden {
+  display: none;
+}
+
 .publication {
   padding: 22px 24px;
 }
