@@ -453,6 +453,27 @@ h3 {
   display: none;
 }
 
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 7px;
+}
+
+.publication-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid #d9cad6;
+  border-radius: 999px;
+  background: rgba(255, 250, 253, 0.72);
+  padding: 2px 9px;
+  color: #76566d;
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
 .publication {
   padding: 22px 24px;
 }

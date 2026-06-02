@@ -429,25 +429,43 @@
       let currentView = "selected";
       let currentTopic = "all";
 
+      const topicLabels = {
+        "llm-data": "LLM Data",
+        "multi-modal-lm": "Multilingual / Multimodal LM",
+        "modularity": "Modularity",
+        "ai-safety": "AI Safety",
+        "evaluation": "Evaluation & Benchmarks",
+        "reasoning": "Reasoning",
+        "ml-systems": "ML Systems",
+        "proposals": "Proposals"
+      };
       const selectedCount = publications.filter((publication) => publication.dataset.selected !== "false").length;
-      const topicCounts = publications.reduce((counts, publication) => {
-        (publication.dataset.topics || "").split(/\s+/).filter(Boolean).forEach((topic) => {
-          counts[topic] = (counts[topic] || 0) + 1;
-        });
-        return counts;
-      }, {});
 
       viewButtons.forEach((button) => {
         button.dataset.label = button.textContent.trim();
       });
       topicButtons.forEach((button) => {
-        const topic = button.dataset.publicationTopic;
         button.dataset.label = button.textContent.trim();
-        const count = topic === "all" ? publications.length : topicCounts[topic] || 0;
-        button.textContent = `${button.dataset.label} (${count})`;
       });
       document.querySelector("[data-publication-view='selected']").textContent = `Selected (${selectedCount})`;
       document.querySelector("[data-publication-view='date']").textContent = `All by date (${publications.length})`;
+
+      publications.forEach((publication) => {
+        const title = publication.querySelector("h3");
+        if (!title || publication.querySelector(".publication-tags")) return;
+        const topics = (publication.dataset.topics || "").split(/\s+/).filter(Boolean);
+        const tags = document.createElement("div");
+        tags.className = "publication-tags";
+        topics.forEach((topic) => {
+          const label = topicLabels[topic];
+          if (!label) return;
+          const tag = document.createElement("span");
+          tag.className = "publication-tag";
+          tag.textContent = label;
+          tags.appendChild(tag);
+        });
+        if (tags.children.length) title.before(tags);
+      });
 
       const setActive = (buttons, attribute, value) => {
         buttons.forEach((button) => {
