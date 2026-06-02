@@ -475,7 +475,6 @@
 
       const updatePublications = () => {
         const topicMode = currentView === "topic";
-        let shown = 0;
 
         publications.forEach((publication) => {
           const selected = publication.dataset.selected !== "false";
@@ -484,12 +483,11 @@
           const visibleByTopic = !topicMode || currentTopic === "all" || topics.includes(currentTopic);
           const visible = visibleByView && visibleByTopic;
           publication.classList.toggle("is-hidden", !visible);
-          shown += visible ? 1 : 0;
         });
 
         topicControls.hidden = !topicMode;
         const label = currentView === "selected" ? "selected publications" : "publications";
-        status.textContent = `Showing ${shown} ${label}.`;
+        status.textContent = `Showing ${label}.`;
       };
 
       viewButtons.forEach((button) => {
